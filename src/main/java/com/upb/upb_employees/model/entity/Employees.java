@@ -27,9 +27,9 @@ public class Employees {
 
     @ManyToOne
     @JoinColumn(name = "fk_department_id", referencedColumnName = "id", nullable = false)
-    private Departments departments;
+    private Departments fkDepartmentId;
 
     @ManyToOne
     @JoinColumn(name = "fk_position_id", referencedColumnName = "id", nullable = false)
-    private Positions positions;
+    private Positions fkPositionId;
 }
