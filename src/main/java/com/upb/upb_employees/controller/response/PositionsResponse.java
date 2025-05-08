@@ -8,6 +8,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PositionsResponse {
-    public Long positionId;
-    public String positionName;
+    private Long positionId;
+    private String positionName;
 }

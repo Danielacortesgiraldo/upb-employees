@@ -8,10 +8,10 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class EmployeesResponse {
-    public Long employeeId;
-    public String firstName;
-    public String middleName;
-    public String email;
-    public DepartmentsResponse departmentsResponse;
-    public PositionsResponse positionsResponse;
+    private Long employeeId;
+    private String firstName;
+    private String middleName;
+    private String email;
+    private DepartmentsResponse departmentsResponse;
+    private PositionsResponse positionsResponse;
 }

@@ -8,6 +8,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DepartmentsResponse {
-    public Long departmentId;
-    public String departmentName;
+    private Long departmentId;
+    private String departmentName;
 }
