@@ -11,6 +11,6 @@ public interface PositionsRepository extends JpaRepository<Positions, Long> {
     @Query(value = "SELECT * FROM positions", nativeQuery = true)
     List<Positions> positionsList();
 
-    @Query(value = "SELECT * FROM positions WHERE id = :positionId")
+    @Query(value = "SELECT * FROM positions WHERE id = :positionId", nativeQuery = true)
     Positions searchPositions(@Param("positionId") Long positionId);
 }

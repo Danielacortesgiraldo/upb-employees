@@ -11,6 +11,6 @@ public interface DepartmentsRepository extends JpaRepository<Departments, Long> 
     @Query(value = "SELECT * FROM departments", nativeQuery = true)
     List<Departments> departmentsList();
 
-    @Query(value = "SELECT * FROM departments WHERE id = :departmentId")
+    @Query(value = "SELECT * FROM departments WHERE id = :departmentId", nativeQuery = true)
     Departments searchDepartments(@Param("departmentId") Long departmentId);
 }
